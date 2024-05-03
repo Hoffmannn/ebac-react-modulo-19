@@ -48,9 +48,17 @@
       href="https://www.google.com/cse/static/style/look/v4/default.css"
     />
     <style type="text/css">
-      a {
-        min-width: 44px;
-        min-height: 44px;
+      .sidesection > p, .top10 a, .s12 a, #privacyPolicy  { 
+        line-height: 44px !important;
+      }
+      .sidesection a, .top10 a, .s12 a, #privacyPolicy  {
+        padding: 22px 0 !important;
+      }
+      .w3-btn, .w3-btn:link, .w3-btn:visited,  .w3-container .top, a.active {
+        background-color: #4d7a0e !important;
+      }
+      .dotcom {
+        color: #4d7a0e !important;
       }
       .gsc-control-cse {
         font-family: arial, sans-serif;
@@ -731,7 +739,7 @@
               <div class="w3-code notranslate htmlHigh">
                 <span style="color: brown"
                   ><span style="color: mediumblue">&lt;</span>!DOCTYPE<span
-                    style="color: red"
+                    style="color: #9e0000"
                   >
                     html</span
                   ><span style="color: mediumblue">&gt;</span></span
@@ -893,7 +901,7 @@
               <div class="w3-code notranslate htmlHigh">
                 <span style="color: brown"
                   ><span style="color: mediumblue">&lt;</span>!DOCTYPE<span
-                    style="color: red"
+                    style="color: #9e0000"
                   >
                     html</span
                   ><span style="color: mediumblue">&gt;</span></span
@@ -1106,7 +1114,7 @@
                     txt =
                       '<a href="http://www.facebook.com/sharer.php?u=http://www.w3schools.com' +
                       loc +
-                      '" target="_blank" ><span class="fa fa-facebook-square fa-2x" aria-label="facebook sharer"></span></a>';
+                      '" target="_blank" aria-label="facebook sharer" ><span class="fa fa-facebook-square fa-2x" ></span></a>';
                     txt =
                       txt +
                       '<a href="http://twitter.com/home?status=Currently reading http://www.w3schools.com' +
@@ -1789,6 +1797,7 @@
         href="http://www.cs.unibo.it/projects/privacy/nocookie/privacy.pdf"
         style="color: white"
         target="_blank"
+        id="privacyPolicy"
         >Privacy Policy</a
       >
     </div>
